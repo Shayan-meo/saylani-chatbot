@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="global.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Poppins';
+            }
+        </style>
+    </head>
+    <body class="lg:px-5">
+          <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-2 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="https://www.saylaniwelfare.com/static/media/logo_saylaniwelfare.22bf709605809177256c.png" alt="Logo" class="h-10">
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="lg:hidden">
+        <button id="menu-btn" class="text-gray-600 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Links -->
+      <ul id="menu" class="hidden lg:flex space-x-6 text-gray-600 font-medium">
+        <li><a href="#" class="text-blue-500">Home</a></li>
+        <li><a href="#" class="hover:text-gray-800">About</a></li>
+        <li><a href="#" class="hover:text-gray-800">Services</a></li>
+        <li><a href="#" class="hover:text-gray-800">Media</a></li>
+        <li><a href="#" class="hover:text-gray-800">Contact Us</a></li>
+        <li><a href="#" class="hover:text-gray-800">Bank Details</a></li>
+        <li><a href="#" class="text-blue-500">Other Websites</a></li>
+      </ul>
+
+      <!-- Buttons -->
+      <div class="hidden lg:flex space-x-2">
+        <button class="px-4 py-2 bg-blue-800 text-white rounded hover:bg-blue-700">
+          DONATE NOW
+        </button>
+        <button class="px-4 py-2 bg-lime-500 text-white rounded hover:bg-lime-600">
+          BE A SPONSOR
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden px-4 pt-4 pb-2 bg-gray-100">
+      <ul class="space-y-2 text-gray-600 font-medium">
+        <li><a href="#" class="text-blue-500 block">Home</a></li>
+        <li><a href="#" class="hover:text-gray-800 block">About</a></li>
+        <li><a href="#" class="hover:text-gray-800 block">Services</a></li>
+        <li><a href="#" class="hover:text-gray-800 block">Media</a></li>
+        <li><a href="#" class="hover:text-gray-800 block">Contact Us</a></li>
+        <li><a href="#" class="hover:text-gray-800 block">Bank Details</a></li>
+        <li><a href="#" class="text-blue-500 block">Other Websites</a></li>
+      </ul>
+      <div class="mt-4 space-y-2">
+        <button class="w-full px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+          DONATE NOW
+        </button>
+        <button class="w-full px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
+          BE A SPONSOR
+        </button>
+      </div>
+    </div>
+  </nav>
+    
+            <!-- hero -->
+            <section
+                class="sec_1 flex flex-col-md-4 gap-y-6 lg:flex-row py-6 justify-center items-center w-full sec_height">
+    
+                <!-- left -->
+                <div class="flex-1 transition ease-in-out delay-150 pl-5 ">
+                    <h1 class="text-4xl font-bold"> <span>Welcome to the</span>
+                        <br>
+                        <span class="text-lime-500 ">Saylani</span> Welfare
+                        Non Governmental Organization in Pakistan</span>
+                    </h1>
+                    <h3 class="text-2xl font-bold mt-3 ">
+                        The largest NGO offering free
+                        <span class="text-blue-500">Health Care and lot more!</span>
+                    </h3>
+    
+                    <p class="mt-3">
+                        Saylani Welfare is on the ground and already working with local communities to assess how best to
+                        support underprivileged families in more than 63 areas of day to day lives.
+                    </p>
+                    <button class="flex items-center border mt-5 px-8 py-3">
+                        <span>Explore More</span>
+                        <span><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="18"
+                                width="18" xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px;">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg></span>
+                    </button>
+    
+                </div>
+    
+                <!-- right -->
+                <div class="flex-1 mt-5 right_div ">
+                    <img  src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646926708/website-images/static/38.png" alt="" class="h-[500px] w-[500px]">
+    
+                </div>
+            </section>
+    
+            <!-- Donation Section -->
+  <section class="flex flex-wrap items-center justify-between bg-lime-100 py-10 px-5 rounded-lg w-full mx-auto max-w-7xl my-5">
+
+    <!-- General Donation Box -->
+    <div class="flex items-center bg-gray-700 rounded-lg px-3 py-3 space-x-2">
+      <span class="text-white">General</span>
+      <input 
+        type="number" 
+        min="0" 
+        maxlength="8" 
+        class="px-2 py-1 rounded-md outline-none w-24"
+        value="0">
+      <span class="text-white">Rs.</span>
+    </div>
+
+    <!-- Buttons Section -->
+    <button
+      class="hover:scale-105 hover:bg-black hover:text-white bg-white px-6 py-2 rounded-lg transition-all mt-2 lg:mt-0">
+      Blood Bank / Thalassemia Treatment
+    </button>
+    <button
+      class="hover:scale-105 hover:bg-black hover:text-white bg-white px-6 py-2 rounded-lg transition-all mt-2 lg:mt-0">
+      Family Kitkat
+    </button>
+    <button
+      class="hover:scale-105 hover:bg-black hover:text-white bg-white px-6 py-2 rounded-lg transition-all mt-2 lg:mt-0">
+      Medical
+    </button>
+    <button
+      class="hover:scale-105 hover:bg-black hover:text-white bg-white px-6 py-2 rounded-lg transition-all mt-2 lg:mt-0">
+      Food
+    </button>
+    <button
+      class="bg-lime-500 text-white px-6 py-2 rounded-lg hover:scale-105 transition-all mt-2 lg:mt-0">
+      Quick Donate
+    </button>
+    
+  </section>
+
+    
+            <!-- Thalassemia image -->
+            <section class="w-full flex justify-center items-center">
+                <img class="lg:w-[1250px] lg:h-[500px]" src="https://res.cloudinary.com/saylani-welfare/image/upload/v1727273177/website-images/dynamic/010d7328-dd17-4a67-8831-56a64c83be8b.jpg" alt="">
+            </section>
+    
+            <!-- what are we doing  -->
+            <section class="text-gray-600 body-font w-full">
+                <div class="container mx-auto">
+                    <div class="flex flex-col-md-4 justify-center w-full mb-20">
+                        <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-900 mt-5"> What We Are Doing </h1>
+    
+                    </div>
+                    <div class="flex flex-wrap m-4 text-center">
+                        <div class="boxes px-3 md:w-1/6 sm:w-1/2 w-full transition-all">
+                            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg"
+                                style="background-color: rgba(182,239,73,.2);"><img
+                                    class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24"
+                                    src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927889/website-images/static/44.png" alt="">
+                                <p class="leading-relaxed" style="font-weight: 700;">Welfare</p>
+                            </div>
+                        </div>
+                        <div class="boxes px-3 md:w-1/6 sm:w-1/2 w-full transition-all">
+                            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg"
+                                style="background-color: rgba(182,239,73,.2);"><img
+                                    class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24"
+                                    src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927857/website-images/static/41.png" alt="">
+                                <p class="leading-relaxed" style="font-weight: 700;">Medical</p>
+                            </div>
+                        </div>
+                        <div class="boxes px-3 md:w-1/6 sm:w-1/2 w-full transition-all">
+                            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg"
+                                style="background-color: rgba(182,239,73,.2);"><img
+                                    class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24"
+                                    src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927849/website-images/static/39.png" alt="">
+                                <p class="leading-relaxed" style="font-weight: 700;">Online Sadqah</p>
+                            </div>
+                        </div>
+                        <div class="boxes px-3 md:w-1/6 sm:w-1/2 w-full transition-all">
+                            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg"
+                                style="background-color: rgba(182,239,73,.2);"><img
+                                    class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24"
+                                    src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927853/website-images/static/40.png" alt="">
+                                <p class="leading-relaxed" style="font-weight: 700;">RO Plant</p>
+                            </div>
+                        </div>
+                        <div class="boxes px-3 md:w-1/6 sm:w-1/2 w-full transition-all">
+                            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg"
+                                style="background-color: rgba(182,239,73,.2);"><img
+                                    class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24"
+                                    src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927923/website-images/static/48.png" alt="">
+                                <p class="leading-relaxed" style="font-weight: 700;">Education</p>
+                            </div>
+                        </div>
+                        <div class="boxes px-3 md:w-1/6 sm:w-1/2 w-full transition-all">
+                            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg"
+                                style="background-color: rgba(182,239,73,.2);"><img
+                                    class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24"
+                                    src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927876/website-images/static/43.png" alt="">
+                                <p class="leading-relaxed" style="font-weight: 700;">Food</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="home_funding ltr">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div>
+                                <div class="funding_box hover:scale-105 transition-all hover:transition-all"><img
+                                        src="https://res.cloudinary.com/saylani-welfare/image/upload/v1653391090/website-images/dynamic/ffcdeed8-6cc9-47c2-80dd-9630145c0ace.jpg"
+                                        alt="">
+                                    <div class="fund_box">
+                                        <h5 class="ant-typography heading_english undefined">R O Water Filter Plant</h5>
+                                        <button class="undefined theme_btn btn btn-primary"><span
+                                                class="ant-typography text_english text-white">Donate</span> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div>
+                                <div class="funding_box hover:scale-105 transition-all hover:transition-all"><img
+                                        src="https://res.cloudinary.com/saylani-welfare/image/upload/v1654923364/website-images/dynamic/c6fdf6af-51d5-4388-97ef-6cf10eb73aca.jpg"
+                                        alt="">
+                                    <div class="fund_box">
+                                        <h5 class="ant-typography heading_english undefined">IT Entrepreneurship Courses
+                                        </h5><button class="undefined theme_btn btn btn-primary"><span
+                                                class="ant-typography text_english text-white">Donate</span> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div>
+                                <div class="funding_box hover:scale-105 transition-all hover:transition-all"><img
+                                        src="https://res.cloudinary.com/saylani-welfare/image/upload/v1678691645/website-images/dynamic/8517e89c-e41d-4868-8c92-3bbc0d1f9339.jpg"
+                                        alt="">
+                                    <div class="fund_box">
+                                        <h5 class="ant-typography heading_english undefined">Zakat</h5><button
+                                            class="undefined theme_btn btn btn-primary"><span
+                                                class="ant-typography text_english text-white">Donate</span> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </section>
+    
+            <!-- upcoming projects section -->
+            <section>
+                <div class="upcoming_projects ltr">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div>
+                                <div class="upcoming_picture_box upcoming_picture_box_ltr"><img
+                                        src="https://i.tribune.com.pk/media/images/2178912-image-1584559620/2178912-image-1584559620.jpg"
+                                        alt="">
+                                    <div class="upcoming_text_box">
+                                        <h3 class="ant-typography heading_english undefined">Saylani serve almost 300,000
+                                            underprivileged on daily basis</h3>
+                                    </div>
+                                    <div class="upcoming_text_box_transparent_1 upcoming_text_box_transparent_1_ltr"></div>
+                                    <div class="upcoming_text_box_transparent_2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="upcoming_projects_heading text-2xl font-bold mb-3">
+                                <h2 class="ant-typography heading_english undefined">Other Projects</h2>
+                            </div>
+                            <div class="d-flex upcoming_projects_items upcoming_projects_items_ltr">
+                                <div>
+                                    <div><img
+                                            src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927917/website-images/static/47.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="other_projects_head">
+                                    <h5 class="ant-typography heading_english undefined">Hepatitis</h5><span
+                                        class="ant-typography text_english normal_text">Saylani Welfare has also set up a
+                                        clinic
+                                        for the best treatment of hepatitis patients where hepatitis patients are being
+                                        treated</span>
+                                </div>
+                            </div>
+                            <div class="d-flex upcoming_projects_items upcoming_projects_items_ltr">
+                                <div>
+                                    <div><img
+                                            src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927914/website-images/static/46.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="other_projects_head">
+                                    <h5 class="ant-typography heading_english undefined">Housing Society</h5><span
+                                        class="ant-typography text_english normal_text">Saylani Welfare is also providing
+                                        its
+                                        own home facility for the homeless people. So far, thousands of houses and flats
+                                        have
+                                        been constructed and given in easy installments</span>
+                                </div>
+                            </div>
+                            <div class="d-flex upcoming_projects_items upcoming_projects_items_ltr">
+                                <div>
+                                    <div><img
+                                            src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927868/website-images/static/42.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="other_projects_head">
+                                    <h5 class="ant-typography heading_english undefined">IT Literacy</h5><span
+                                        class="ant-typography text_english normal_text">We are committed to developing more
+                                        than
+                                        1 million software developers, which will add about 100 billion annually to
+                                        Pakistan's
+                                        economy and help ease the debt burden on Pakistan</span>
+                                </div>
+                            </div>
+                            <div class="d-flex upcoming_projects_items upcoming_projects_items_ltr">
+                                <div>
+                                    <div><img
+                                            src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927896/website-images/static/45.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="other_projects_head">
+                                    <h5 class="ant-typography heading_english undefined">Tharparkar</h5><span
+                                        class="ant-typography text_english normal_text">In Tharparkar, Saylani has set up
+                                        several schools and ro plants, dug wells and brought the children there to Karachi
+                                        and
+                                        taught them modern technology</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services_counter">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="counter_single">
+                                        <div style="transform: none;">
+                                            <div class="counter_image"><img
+                                                    src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646928748/website-images/static/50.png"
+                                                    alt=""></div>
+                                        </div>
+                                        <div class="counter_heading">
+                                            <h2 class="ant-typography heading_english undefined"><span>300000</span></h2>
+                                            <span class="ant-typography text_english normal_text">Food</span><br><span
+                                                class="ant-typography text_english normal_text">(Daily)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="counter_single">
+                                        <div style="transform: none;">
+                                            <div class="counter_image"><img
+                                                    src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646928746/website-images/static/49.png"
+                                                    alt=""></div>
+                                        </div>
+                                        <div class="counter_heading">
+                                            <h2 class="ant-typography heading_english undefined"><span>20000</span></h2>
+                                            <span class="ant-typography text_english normal_text">Family
+                                                Adoption</span><br><span
+                                                class="ant-typography text_english normal_text">(Monthly)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="counter_single">
+                                        <div style="transform: none;">
+                                            <div class="counter_image"><img
+                                                    src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646928752/website-images/static/51.png"
+                                                    alt=""></div>
+                                        </div>
+                                        <div class="counter_heading">
+                                            <h2 class="ant-typography heading_english undefined"><span>25000</span></h2>
+                                            <span class="ant-typography text_english normal_text">Education</span><br><span
+                                                class="ant-typography text_english normal_text">(Monthly)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="counter_single">
+                                        <div style="transform: none;">
+                                            <div class="counter_image"><img
+                                                    src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646928755/website-images/static/52.png"
+                                                    alt=""></div>
+                                        </div>
+                                        <div class="counter_heading">
+                                            <h2 class="ant-typography heading_english undefined"><span>125000</span></h2>
+                                            <span class="ant-typography text_english normal_text">Medical</span><br><span
+                                                class="ant-typography text_english normal_text">(Monthly)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- what they say -->
+            <div class="flex flex-col-md-4 justify-center w-full my-3 ">
+                <div>
+                    <p class="text-lime-500 text-center">Our Testimonials</p>
+                    <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900"> What They Say?</h1>
+    
+                </div>
+            </div>
+           
+  <section class="bg-gray-100 rounded-lg shadow-md max-w-7xl mx-4 p-6 text-center">
+    
+    <!-- Profile Image -->
+    <div class="flex justify-center mb-4">
+      <img 
+        src="https://res.cloudinary.com/saylani-welfare/image/upload/v1648318863/website-images/static/95.jpg" 
+        alt="Profile Image" 
+        class="rounded-full w-24 mt-3 h-24 object-cover border-4 border-white shadow-md">
+    </div>
+    
+    <!-- Name and Designation -->
+    <h2 class="text-blue-600 text-2xl font-bold mb-1">Arshad Wali Muhammad</h2>
+    <p class="text-gray-500 mb-2">(Group Director, Gerry's Group)</p>
+
+    <!-- Testimonial Content -->
+    <p class="text-gray-700 leading-relaxed mb-6">
+      Saylani Welfare Trust is a name that needs no introduction today. The journey this team embarked upon was made 
+      possible owing to their zeal, enthusiasm & commitment to the society and by the grace of Allah (SWT), it has become 
+      a name that we need and not just the one we want. I wish Saylani’s team all the success and blessing that they 
+      deserve for future, May God bless Saylani and ensure prosperity and happiness for our people, Ameen!
+    </p>
+
+    <!-- Navigation Buttons -->
+    <div class="flex justify-center space-x-3">
+      <button 
+        class="bg-white border rounded-md w-12 h-12 flex items-center justify-center hover:bg-gray-200 transition">
+        <span class="text-gray-600 text-2xl">&larr;</span>
+      </button>
+      <button 
+        class="bg-lime-500 text-white rounded-md w-12 h-12 flex items-center justify-center hover:bg-green-600 transition">
+        <span class="text-white text-2xl">&rarr;</span>
+      </button>
+    </div>
+  </section>
+    
+            <!-- media section -->
+            <section class="container">
+                <div class="flex flex-col-md-4 justify-center w-full mb-20">
+                    <h1 class="sm:text-3xl text-2xl font-bold title-font mt-4 text-gray-900">Media Updates </h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="card col-md-4 mt-2 mx-1" style="width: 18rem;">
+                        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1691069591/website-images/dynamic/9bde83bf-d81c-4d55-b641-b635593c8f29.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text font-bold">Journey to Success | 17 Candidates Heading to Dubai for
+                                Employment | Saylani #Dubai #Jobs #2023</p>
+                            <p class="text-xs">#Charity #Organisation</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-4 mt-2 mx-1" style="width: 18rem;">
+                        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1691036228/website-images/dynamic/b942fa09-d966-4640-852a-8f78b40177eb.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text font-bold">Support our Initiative | Become a Sponsor For a Thalassemia
+                                Patient | Saylani Blood Bank | #Saylani</p>
+                            <p class="text-xs">#Charity #Organisation</p>
+    
+                        </div>
+                    </div>
+                    <div class="card col-md-4 mt-2 mx-1" style="width: 18rem;">
+                        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1690863908/website-images/dynamic/5bf22e55-fa6f-4e77-8472-f5cd5954e540.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text font-bold">Guaranteed Job Placement | Tomorrow is the Big Day | 3D
+                                Visualization Course Test | #Saylani #2023</p>
+                            <p class="text-xs">#Charity #Organisation</p>
+    
+                        </div>
+                    </div>
+                    <div class="card col-md-4 mt-2 mx-1" style="width: 18rem;">
+                        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1690779332/website-images/dynamic/2a388544-fe22-441a-9020-74f112f79604.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text font-bold">Saylani Welfare's Impactful Journey in Blood Bank Services Since
+                                2016| Be a Sponsor | #Saylani #2023</p>
+                            <p class="text-xs">#Charity #Organisation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="card col-md-4 mt-2 mx-1" style="width: 18rem;">
+                        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1690459580/website-images/dynamic/9fd893f9-9131-4404-98cd-f0f19680434a.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text font-bold">100% Job Placement Program | FREE COURSE 3D Visualization With 3D
+                                Max | Graphic Designing | 2023</p>
+                            <p class="text-xs">#Charity #Organisation</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-4 mt-2 mx-1" style="width: 18rem;">
+                        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1690449226/website-images/dynamic/ab510ee6-73a3-41e9-8ea6-90bf8afc2173.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text font-bold">COAS Pledges to Guide Pakistan through Crises | Chief of Army
+                                Staff | Maulana Bashir Farooq Qadri</p>
+                            <p class="text-xs">#Charity #Organisation</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-4 mt-2 mx-1" style="width: 18rem;">
+                        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1690378256/website-images/dynamic/b477d230-5ca1-4326-b73c-3416cd113d96.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text font-bold">Thalassemia Testing: A Crucial Step Before Marriage? | Maulana
+                                Bashir Farooq Explains!</p>
+                            <p class="text-xs">#Charity #Organisation</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-4 mt-2 mx-1" style="width: 18rem;">
+                        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1690346952/website-images/dynamic/478d5b0a-74e8-4508-b45c-67025be7eaeb.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text font-bold">Tech Giant Gene Frisco | CEO of eiTech Visits SMIT | Inspiring
+                                Talk on Technology | Saylani #2023</p>
+                            <p class="text-xs">#Charity #Organisation</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- news section -->
+            <section class="container ">
+                <div class="flex flex-col-md-4 justify-center w-full mb-20">
+                    <h1 class="sm:text-3xl text-2xl font-bold title-font mt-4 text-gray-900">News </h1>
+                </div>
+                <div class="container">
+                    <div class="row justify-center">
+                        <div class="card bg-stone-100 p-0 mt-2 mx-1" style="width: 18rem;">
+                            <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1689745515/website-images/dynamic/a6e61c6d-f7fc-4e57-b67e-d8e3ed8eb759.jpg"
+                                class="card-img-top " alt="...">
+                            <div class="card-body ">
+                                <a href="#" class="btn bg-lime-500 text-xs text-white mb-1">Thu Dec 07 2023</a>
+                                <h5 class="card-title font-bold py-2">Grand Entry Test</h5>
+                                <button class="flex bg-white items-center border py-2 px-3 rounded">
+                                    <span><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24"
+                                            height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                        </svg></span>
+                                </button>
+    
+                            </div>
+                        </div>
+                        <div class="card bg-stone-100 p-0 mt-2 mx-1" style="width: 18rem;">
+                            <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1690864253/website-images/dynamic/aac37095-4bc6-4773-8928-724ae2678e3c.jpg"
+                                class="card-img-top " alt="...">
+                            <div class="card-body ">
+                                <a href="#" class="btn bg-lime-500 text-xs text-white mb-1">Thu Dec 07 2023</a>
+                                <h5 class="card-title font-bold py-2">Grand Entry Test</h5>
+                                <button class="flex bg-white items-center border py-2 px-3 rounded">
+                                    <span><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24"
+                                            height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                        </svg></span>
+                                </button>
+    
+                            </div>
+                        </div>
+                        <div class="card bg-stone-100 p-0 mt-2 mx-1" style="width: 18rem;">
+                            <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1689570853/website-images/dynamic/0822814f-bfc5-497c-8f04-d2f0d200f5b0.jpg"
+                                class="card-img-top " alt="...">
+                            <div class="card-body ">
+                                <a href="#" class="btn bg-lime-500 text-xs text-white mb-1">Thu Dec 07 2023</a>
+                                <h5 class="card-title font-bold py-2">Grand Entry Test</h5>
+                                <button class="flex bg-white items-center border py-2 px-3 rounded">
+                                    <span><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24"
+                                            height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                        </svg></span>
+                                </button>
+    
+                            </div>
+                        </div>
+                        <div class="card bg-stone-100 p-0 mt-2 mx-1" style="width: 18rem;">
+                            <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1686287238/website-images/dynamic/d6eae607-bbdb-43d8-91a4-c963a0db98d8.jpg"
+                                class="card-img-top " alt="...">
+                            <div class="card-body ">
+                                <a href="#" class="btn bg-lime-500 text-xs text-white mb-1">Thu Dec 07 2023</a>
+                                <h5 class="card-title font-bold py-2">Grand Entry Test</h5>
+                                <button class="flex bg-white items-center border py-2 px-3 rounded">
+                                    <span><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24"
+                                            height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                        </svg></span>
+                                </button>
+    
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </section>
+    
+            <!-- email us -->
+            <div class="undefined saylani_guide saylani_guide_blue ltr">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="guide_heading">
+                            <h2 class="font-bold text-3xl mb-2">Saylani Guide</h2>
+                        </div>
+                        <div class="guide_content">
+                            <div class="guide_input">
+                                <div class="theme_input input_color_blue "><input min="0" type="text"
+                                        placeholder="Enter E-Mail Address"
+                                        class="ant-input theme_input_ltr w-full py-3 px-3 bg-transparent border" value="">
+                                </div>
+                            </div>
+                            <div class="guide_btn_container"><button
+                                    class="guide_btn guide_btn_ltr theme_btn btn btn-primary"><span
+                                        class="ant-typography text_english normal_text">SUBSCRIBE</span> </button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+    
+        <!-- footer -->
+        <div class="footer ltr">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-4">
+                        <div class="footer_logo"><img width="300"
+                                src="https://www.saylaniwelfareusa.com/static/media/logo_saylaniwelfareusa.22bf709605809177256c.png"
+                                alt=""></div>
+                        <div class="d-flex social_icons">
+                            <div><a rel="noreferrer" target="_blank"
+                                    href="https://www.facebook.com/SaylaniWelfareInternationalTrust"><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAYAAADhu0ooAAAABHNCSVQICAgIfAhkiAAAAktJREFUaEPtmL9PU1EUx7+tDwjUVgoFK6aL3RxhMtGNEP8AC0M3BkPSSOKg0bAATVwloAykmwhhYMZoQkIpJgYwDo6EpQ2FVrHWUqKvVW9d+5p3H7n3/fLcsfnmvfv5fu+557x6Yg+zf/AfLA+BuixlStRlgYISpUQd6gAdXYcG13LblKjMRG9E2nB70IdIWMHVXgWhoALlElCrA8dfaihX6nj/6RxvdyrCtmFqou1tHkyMBRlkly7A1m4VL1dPdXW8AtNAG4klJ/sRjbRz7c2xoPdjQQzf8nFBNkTpvSperDgs0XBIwdzTMLwebk6k9xnoa4eBjt4N4N5IgJ+ykagTQacTfbgZ7WgJuvnhDG8yFRwVavilyvkfwJTLaGHqGmsj7DbSWJmPVcwvizuirdw0BXRpZgDdfq/mHmYXi/h88NPQsb6I2BTQ1OwAApe1QSefHf8bEmQvc0CTDNSnDZpI5lH8xkYiyYtARRqcclui1/sVXPE3366PxkPwdWpPC3OvvqJU/t3ka+5EZcN98+8XDUDo0X0Q78GdIf2BnWezom9j24JOzORx+l3cJWVLUJV1m/jjHE/w3Bpbgh5mVTx5fsINwSO0Jeg2G+gXBH65NIywJejaRhnr78o8QXFrhIKKai9HBRWlH+Jai/BEW9nruoGBQN02AlKilChA36PcHZJPKLSPUo1SjVKN8hWeARXVqAGzdKU06zKLqI/qnhNjAlNq1NiW5KgJVI6v1j2VErXOezlvpkTl+GrdUylR67yX82ZKVI6v1j31L/Sti1p5bJxrAAAAAElFTkSuQmCC"
+                                        alt=""></a></div>
+                            <div><a rel="noreferrer" target="_blank" href="https://twitter.com/OfficialSwit"><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAYAAADhu0ooAAAABHNCSVQICAgIfAhkiAAAA2lJREFUaEPtWE9Ik2EYf0RBbZloOGHiaouMmKMiSS8d5n3QLaFOu3Qq8NYhTx7qVGC3oJ06zHOdOuihoCmGhI5o0VYLBScpFqtFg3p/g08+bXPf+7zf98L0fc7v+zzP7/k9/9635drLV3/pCEiLAXrIWDaMHjJCyTBqGG3SCJjUbVLi6rptGDWMNmkETOrqJC7U5aMr/pO7Jkt/KrS4uUXFX2XX3GAx6mtro1KlouwEACbOhWm4p7umrrn1DUp+yO+xFQv0U7TnBM1kPkrZZwGdHokKB3KU/1GSMmY/DJDQg6AdJAho6lOBcH5UsI7zU29XaHVrR8q2NFAYfDh2qRrlqaUVFlh/Z4fQcbEhyFpIXhTW6akIsqxIAx0XqXM7crZqB2AfixRaKH6Tsnv3wvkqO7IyL1I5LWp3tK+XMtvfCantVKSBToSDdP1McI/+51/WKJnNO7KJ1HsWG3N0tt4hAPa8Ru2M2h1BvSazuYa1M9zbTdOXo2ygHJAwJs2oVaP1PF3d3qHZXKEu4FoZ4RT1rGhKKaGbI9JAYeSRaEanRVM6SDADUbsLoqYyArwl8VMDlBgKcXxldVvLEAsoJ/3ANAQBQPpzhDNW2EAxGixnre7LcZpzRytQ1Fgs4CcwFOo6Xh3kuuTmfJq9kUmnLuYf5qBu+Slm9g0BlCvSQDEHn1wdoWMNVjeuQ/XuLYrGdv/de7ZaaaCwpDIiuJ5iIcFiwhUWUKcjhutUrXu3Xi8pPdvYQJHCd8TOa39HugnMrgtz+J54QKgIG6hlFDM1PhjwFPADUZuyD4f9QVECilqNCKBg16sx81ns0JPpZRUyq3eVgHI2JFmPVZYEuy0loFCEOsX3hhfCfanU8kUZqFdgN8u/afLNMnsTcrVG7crcbErYgtBlVf6kPANqV8z9KoEOL0AqN6P9UQOriaEwuwN7BdIVoHi2RcS/bDwYYAOEIxgjM5msq+nK7rp4MPd1tu9+OPs72glAVUXli8SpbemuC2AT4UFXRgrGRyr3VWmH9QyopRjb0PhAf/WPFanrVLC34h9pbm3DtdHhxLY0o/WUohHhx8HX2vrfkaKYicVyueFXqBOHuWdcA8p1QNc9A1RXpHXZMYzqirQuO4ZRXZHWZccwqivSuuwYRnVFWpcdw6iuSOuyc2QY/QfkiNGCE+/P7QAAAABJRU5ErkJggg=="
+                                        alt=""></a></div>
+                            <div><a rel="noreferrer" target="_blank"
+                                    href="https://www.youtube.com/c/SaylaniWelfareInternationalTrust"><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAA6CAYAAAAOeSEWAAAABHNCSVQICAgIfAhkiAAAAnhJREFUaEPtWDFMU1EUvcVCLbXWYL4DwYQFBxycJLiVjq1j/wyMbhCjgwt1cZAYnUycCGGko3UENgYmBhh0aVLCQFONNlBqFX23SZPG/JB/7//vPfm9N/nbe/e+c8799973YrUn7h8YEIsJ2IgqLcpGVFgQZUXZCDAgaRwBET0hiLKibAQYkDSOgIhSoCSNg6Rx/LYD18acIC66e39/rcOvRj2wn34HgZQdSqYgXSjC9Xv3YXhiMtSD9TvrHFXh/PMBNCtluGidsuOwwaKCd168BgRsyhDoyavnbMXZYJ2lFUgoRU1ba38PGh9WWWFZYFHN8TdrrIBhbDp+ushKZxZYVBSVtWX1dy+hrf5hqrHApnMFyBTnqbFCW/9t4z2c7u6Q/bHA3iy4gB/FmtufIDWbVQVtlLLNc+2PyibgRzVjYDH1OrUq3MjlyUT9C8oo2Iy7AOm5PInY/v8M21amuADJBw9JPnqLjYJ1lkuQmJomHdSrqGChw9+B6qv95RDqb0uk+LiYlcZhge2dNvUoqyYxF+I+x8wrDRbTGdMa09uPXUmwOE/fUi2MOokZBRtGgUrnXcD05ZjRAsXps/2tB9tPkAvEfw+2uVVRrWbG9395meJGwdoeF7+X1wHJoxqr9QzURWCgrniYPpzBgpp2Xuu5bYc9QeFG7JEIOIxbjF8SLlpn6lnmmflnGTxg98HtsQsjCjh1vvULENehmj/Vo1vz4ybrhaIXi1WgLjsoEjB8d5KCxXMtXgeDvCR6OQ0dbGCUGh0IWI3kWnUtylqlX2NwUVYjuVZdi7JW6dcYXJTVSK5V16KsVfo1BhdlNZJr1bUoa5V+jcH/AvcscIo5+j/XAAAAAElFTkSuQmCC"
+                                        alt=""></a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 z_index_1">
+                        <div class="footer_about sm:text-center">
+                            <h4 class="text-2xl font-bold">About</h4>
+                            <ul>
+                                <li><a href="/en/about/saylani-introduction"><span
+                                            class="ant-typography text_english normal_text">Introduction</span></a></li>
+                                <li><a href="/en/about/chairman-message"><span
+                                            class="ant-typography text_english normal_text">Chairman Message</span></a></li>
+                                <li><a href="/en/about/audit-reports"><span
+                                            class="ant-typography text_english normal_text">Annual Report</span></a></li>
+                                <li><a href="/en/bank-details"><span class="ant-typography text_english normal_text">Bank
+                                            Details</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 z_index_1">
+                        <div class="footer_about sm:text-center">
+                            <h4 class="text-2xl font-bold">Explore</h4>
+                            <ul>
+                                <li><a href="/en/news"><span class="ant-typography text_english normal_text">News</span></a>
+                                </li>
+                                <li><a href="/en/media"><span
+                                            class="ant-typography text_english normal_text">Media</span></a></li>
+                                <li><a href="/en/contact-us"><span
+                                            class="ant-typography text_english normal_text">Contact</span></a></li>
+                                <li><a href="/en/donate"><span
+                                            class="ant-typography text_english normal_text">Donation</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 z_index_1">
+                        <div class="footer_contact sm:text-center">
+                            <h4 class="text-2xl font-bold">Contact</h4><span
+                                class="ant-typography text_english normal_text"><span style="white-space: pre-line;">A-25,
+                                    Bahadurabad Chowrangi Karachi, Pakistan
+                                    UAN: 111-729-526 (+0092-213)4130786-90
+                                    CELL: 92-311-1729526
+                                    USA NO +1(716)941 7792
+                                    UK NO (+44)115 970 6256</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer_copyright p-10"><img width="200"
+                                src="https://res.cloudinary.com/saylani-welfare/image/upload/v1662787571/website-images/finance/acca-logo/acca-approved-trainee-development-gold-logo-dark_dbuqdu.png"
+                                alt=""></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 z_index_1">
+                        <div class="footer_copyright"><span>IP address data powered by <a target="_blank"
+                                    href="https://ipinfo.io" rel="noreferrer">IPinfo</a></span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer_copyright sm:text-center"><span>Copyright © 2023 by Saylani Welfare Int
+                                Trust</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    <script>
+        // Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+            crossorigin="anonymous"></script>
+
+            <script type="module">
+                import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+                Chatbot.init({
+                    chatflowid: "0db47014-0916-4d20-a4ad-3a319b6999b4",
+                    apiHost: "https://flowise-ai-production-4cb1.up.railway.app",
+                    chatflowConfig: {
+                        /* Chatflow Config */
+                    },
+                    observersConfig: {
+                        /* Observers Config */
+                    },
+                    theme: {
+                        button: {
+                            backgroundColor: 'black',
+                            right: 20,
+                            bottom: 20,
+                            size: 48,
+                            dragAndDrop: true,
+                            iconColor: 'white',
+                            customIconSrc: 'https://www.saylaniwelfare.com/static/media/logo_saylaniwelfare.22bf709605809177256c.png',
+                            autoWindowOpen: {
+                                autoOpen: true,
+                                openDelay: 2,
+                                autoOpenOnMobile: false
+                            }
+                        },
+                        tooltip: {
+                            showTooltip: true,
+                            tooltipMessage: 'Hi There 👋!',
+                            tooltipBackgroundColor: 'black',
+                            tooltipTextColor: 'white',
+                            tooltipFontSize: 16
+                        },
+                        disclaimer: {
+                            title: 'Disclaimer',
+                            message: "By using this chatbot, you agree to the <a target=\"_blank\" href=\"https://flowiseai.com/terms\">Terms & Condition</a>",
+                            textColor: 'black',
+                            buttonColor: '#3b82f6',
+                            buttonText: 'Start Chatting',
+                            buttonTextColor: 'white',
+                            blurredBackgroundColor: 'rgba(0, 0, 0, 0.4)',
+                            backgroundColor: 'white'
+                        },
+                        customCSS: ``,
+                        chatWindow: {
+                            showTitle: true,
+                            showAgentMessages: true,
+                            title: 'SMIT Bot',
+                            titleAvatarSrc: 'https://www.saylaniwelfare.com/static/media/logo_saylaniwelfare.22bf709605809177256c.png',
+                            welcomeMessage: 'I am the Saylani Welfare Trust AI Assistant. How can I help you today?',
+                            errorMessage: 'This is a custom error message',
+                            backgroundColor: '#ffffff',
+                            backgroundImage: 'enter image path or link',
+                            height: 500,
+                            width: 400,
+                            fontSize: 16,
+                            starterPrompts: [
+                                "What is a bot?",
+                                "Who are you?"
+                            ],
+                            starterPromptFontSize: 15,
+                            clearChatOnReload: false,
+                            sourceDocsTitle: 'Sources:',
+                            renderHTML: true,
+                            botMessage: {
+                                backgroundColor: '#f7f8ff',
+                                textColor: '#303235',
+                                showAvatar: true,
+                                avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png'
+                            },
+                            userMessage: {
+                                backgroundColor: '#3B81F6',
+                                textColor: '#ffffff',
+                                showAvatar: true,
+                                avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png'
+                            },
+                            textInput: {
+                                placeholder: 'Type your question',
+                                backgroundColor: '#ffffff',
+                                textColor: '#303235',
+                                sendButtonColor: '#3B81F6',
+                                maxChars: 50,
+                                maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                                autoFocus: true,
+                                sendMessageSound: true,
+                                sendSoundLocation: 'send_message.mp3',
+                                receiveMessageSound: true,
+                                receiveSoundLocation: 'receive_message.mp3'
+                            },
+                            feedback: {
+                                color: '#303235'
+                            },
+                            dateTimeToggle: {
+                                date: true,
+                                time: true
+                            },
+                            footer: {
+                                textColor: '#303235',
+                                text: 'Powered by',
+                                company: 'Saylani welfare',
+                                companyLink: 'https://www.saylaniwelfare.com/'
+                            }
+                        }
+                    }
+                })
+            </script>
+    </body>
+</html>
